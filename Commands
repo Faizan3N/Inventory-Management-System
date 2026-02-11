@@ -1,0 +1,17 @@
+# 1) Current Directory
+cd "D:\Inventory Management System"
+
+# 2) Create a venv (only once)
+python -m venv .venv
+
+# 3) Activate the venv
+& "D:\Inventory Management System\.venv\Scripts\Activate.ps1"
+
+# 4) Install pipenv (only once per venv)
+python -m pip install pipenv
+
+# 5) Use pipenv to install Django
+python -m pipenv install django
+
+# 6) Enter the pipenv shell (optional)
+pipenv shell
