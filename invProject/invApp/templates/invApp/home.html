@@ -1,0 +1,16 @@
+{% extends 'invApp/base.html' %}
+{% block title %}Home – Inventory App{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card-inv p-4 p-md-5 text-center">
+            <h1 class="page-heading display-5 mb-3">Inventory Management</h1>
+            <p class="text-muted-inv lead mb-4">Manage products, stock levels, and suppliers in one place.</p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a href="{% url 'product-list' %}" class="btn btn-inv btn-lg">View Products</a>
+                <a href="{% url 'create_product' %}" class="btn btn-outline-inv btn-lg">Add Product</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
